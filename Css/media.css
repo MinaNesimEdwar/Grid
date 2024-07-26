@@ -1,0 +1,178 @@
+@media screen and (min-width:768px)  {
+    .layout{
+        display: grid;
+       grid-template-areas: 
+        "a a a a a a a a"
+        "a a a a a a a a"
+        "b b b b b b b b"
+        "b b b b b b b b"
+        "c c c c c d d d"
+        "c c c c c d d d"
+        "e e e e e e e e"
+        "e e e e e e e e"
+        "f f f f f h h h"
+        "f f f f f h h h"
+        "g g g g g h h h"
+        "g g g g g h h h"
+        "i i i i i i i i"
+        "j j j j j j j j";
+    }
+    .section-1{
+        grid-area: a;
+    }
+
+
+    .section-2{
+        grid-area: b;
+    }
+    .section-2 .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .section-2 .container .image{
+        width: 40%;
+    }
+    .section-2 .container .image img{
+        width: 85%;
+    }
+    .section-2 .container .caption{
+        width: 50%;
+    }
+
+
+    .section-3{
+        grid-area: c;
+    }
+
+
+    .section-4{
+        grid-area: d;
+    }
+
+
+    .section-5{
+        grid-area: e;
+    }
+    .section-5 .container{
+        display: flex;
+        justify-content: space-around;
+    }
+    .section-5 .container .image{
+        width: 30%;
+    }
+   .section-5 .image .photo img {
+        display: block;
+    }
+    .section-5 .container .desc{
+        width: 40%;
+    }
+
+
+    .section-6{
+        grid-area: f;        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section-7{
+        grid-area: g;
+        overflow: hidden;
+    }
+    .section-7 .image{
+        position: relative;
+        bottom: -73px;
+    }
+
+
+    .section-8{
+        grid-area: h;
+    }
+    .section-8 .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-8 .container .photo{
+        left: 0;
+    }
+
+    .section-9{
+        grid-area: i;
+    }
+    .section-10{
+        grid-area: j;
+    }
+    .section-10 .container{
+        display: flex;
+        align-items: center;
+        justify-content:center
+    }
+    .section-10 .image{
+        width:40% ;
+    }
+    .section-10 .caption{
+        width:40% ;
+    }
+}
+
+
+
+@media screen and (min-width:1024px){
+    .layout{
+        display: grid;
+        grid-template-areas: 
+        "b b b b a a a a"
+        "b b b b a a a a"
+        "b b b b a a a a"
+        "b b b b a a a a"
+        "c e e e e e e h"
+        "c e e e e e e h"
+        "c e e e e e e h"
+        "c e e e e e e h"
+        "d g g g g g g h"
+        "d g g g g g g h"
+        "d g g g g g g h"
+        "d g g g g g g h"
+        "f i i j j j j j"
+        "f i i j j j j j";
+    }
+
+    .section-1{
+        grid-area: a;
+    }
+    .section-2{
+        grid-area: b;
+    }
+    .section-3{
+        grid-area: c;
+    }
+    .section-4{
+        grid-area: d;
+    }
+    .section-5{
+        grid-area: e;
+        overflow: hidden;
+    }
+    .section-5 .image .photo img{
+        position: relative;
+        bottom: -22px;
+    }
+    .section-6{
+        grid-area: f;
+    }
+    .section-7{
+        grid-area: g;
+    }
+    .section-8{
+        grid-area: h;
+    }
+    .section-9{
+        grid-area: i;
+    }
+    .section-10{
+        grid-area: j;
+    }
+}
